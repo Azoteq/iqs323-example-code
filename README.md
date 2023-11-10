@@ -23,7 +23,7 @@ In the example code folder, go to file: `src/IQS323.h`. Change the value of the
 define to the number of the specific IQS323 EV-KIT the Arduino project needs to
 be compiled for.
 
-```
+```c
 /* Select the EV-Kit below by changing the value of the define (default = 0):
  * 0: Inductive Options EV-Kit (AZP1212A3).
  * 1: Slider EV-Kit (AZP1209A4).
@@ -34,7 +34,7 @@ be compiled for.
 
 Change the following pin assignments and parameters to suit your hardware:
 
-```
+```c
 /*** Defines ***/
 #define DEMO_IQS323_ADDR                      0x44
 #define DEMO_IQS323_POWER_PIN                 4
@@ -52,12 +52,9 @@ refer to the datasheet and application notes found on the [IQS323 Product Page](
 
 * `DEMO_IQS323_RDY_PIN` sets the pin assignment for the IQS323 ready pin.
   This must support external interrupts.
-  On the SparkFun Pro Micro, pins 0, 1, 2, 3, and 7 support interrupts. [^1]
+  On the SparkFun Pro Micro, pins 0, 1, 2, 3, and 7 support interrupts.
 
->#### `NOTE:`
-> Please note that powering an IQS device directly from a GPIO is
->_generally_ not recommended. However, the `DEMO_IQS323_POWER_PIN` in this
->example could be used as an enable input to a voltage regulator.
+> :memo: **Note:** Please note that powering an IQS device directly from a GPIO is _generally_ not recommended. However, the `DEMO_IQS323_POWER_PIN` in this example could be used as an enable input to a voltage regulator.
 
 ## Example Code Flow Diagram
 
