@@ -28,7 +28,7 @@
  *                  - Forced Communication (All EV-Kits)                      *
  *                                                                            *
  * @author      Azoteq PTY Ltd                                                *
- * @version     v1.5.2-pl2                                                    *
+ * @version     v1.5.3                                                        *
  * @date        2023-11-10                                                    *
  *****************************************************************************/
 
